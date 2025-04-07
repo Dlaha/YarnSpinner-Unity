@@ -34,6 +34,7 @@ namespace Yarn.Unity.Samples
         }
     }
 
+#if UNITY_EDITOR
     [CustomEditor(typeof(SampleRenderDetector))]
     public class SampleRenderDetectorEditor : UnityEditor.Editor
     {
@@ -49,4 +50,5 @@ namespace Yarn.Unity.Samples
             }
         }
     }
+#endif
 }
